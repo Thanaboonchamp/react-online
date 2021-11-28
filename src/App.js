@@ -6,9 +6,11 @@ import Logo from './components/Logo';
 function App() {
   return (
     <>
-      <Logo/>
+     <Logo/>
       <Header/>
-      <Footer/>
+      <Footer title={"Facebook"} website="www.google.com"
+       address="Bangkok" postcode={1207}
+       isOpen={true}></Footer>
     </>
   );
 }
