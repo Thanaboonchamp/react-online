@@ -1,8 +1,11 @@
 import React from 'react'
+import Button from '../styles/button/Buton'
+import Title from '../styles/title/Title'
 import Logo from './Logo'
 
 const header = () => {
 
+    const keyword = "correct"
     let companyName = "TNI"
 
     const showMessage = () => {
@@ -22,7 +25,7 @@ const header = () => {
 
     return (
         <div>
-
+            <Title>Project React</Title>
             <h1>Hello {showMessage()} </h1>
            {companyName}
            {showMessage()}
@@ -30,14 +33,16 @@ const header = () => {
            {
                inslogin && (
                <>
-               <p>Welcome </p>
+               <p>Welcome</p>
                <p>Student</p>
                </>
                ) 
            }
 
            {inslogin ? <Logo/> : <p>Unlock</p>} 
-           <button onClick={showMe}>Click Me</button>
+           <Button onClick={showMe} primary = {keyword}> 
+               Click Me
+            </Button>
            <ul>
            {
                proDucts.map((product,index) => {
