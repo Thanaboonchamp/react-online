@@ -1,34 +1,13 @@
-import React from 'react'
-import PropTypes from 'prop-types';
+import React from "react";
 
-const Footer = ({title, website,address,postcode,isOpen}) => {
+const Footer = () => {
+  return (
+    <>
+      <footer className="container">
+        <p>© Company 2017-2021</p>
+      </footer>
+    </>
+  );
+};
 
-    //const{title,website,address,postcode} = props;
-
-    return (
-        <div>
-            <h3 style={styles.title}>{title} &copy; {new Date().getFullYear()}</h3>
-            <p style={{color:'green',fontSize:18}}>{website} {address} {postcode} {isOpen.toString()}</p>
-            <p style={styles.title}>Thanaboon</p>
-        </div>
-    )
-
-}
-
-const styles = {
-    title : {
-        color: 'red'
-    }
-
-}
-
-Footer.propTypes = {
-    title: PropTypes.string,
-    website: PropTypes.string,
-    address: PropTypes.string,
-    isOpen:PropTypes.bool,
-    postcode:PropTypes.number
-  };
-
-
-export default Footer
+export default Footer;
