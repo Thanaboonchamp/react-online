@@ -14,7 +14,10 @@ import DetailPage from "./pages/DetailPage";
 import ContactPage from "./pages/ContactPage";
 import HospitalPage from "./pages/Hospital/HospitalPage";
 import CategoryPage from './pages/Category/CategoryPage';
+import IndexPage from "./pages/Category/IndexPage";
+import CreatePage from "./pages/Category/CreatePage";
 import EditPage from "./pages/Category/EditPage";
+
 
 
 function App() {
