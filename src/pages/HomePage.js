@@ -1,5 +1,5 @@
 import React from 'react'
-import {FaCat} from 'react-icons/fa'
+import { BsFillHeartFill } from 'react-icons/bs'
 
 const HomePage = () => {
     return (
@@ -8,7 +8,7 @@ const HomePage = () => {
           {/* Main jumbotron for a primary marketing message or call to action */}
           <div className="jumbotron">
             <div className="container">
-              <h1 className="display-3">Hello, world! <FaCat color='skyblue'/></h1>
+              <h1 className="display-3">Hello, world! <BsFillHeartFill color="pink" /> </h1>
               <p>
                 This is a template for a simple marketing or informational
                 website. It includes a large callout called a jumbotron and
