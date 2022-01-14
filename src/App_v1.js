@@ -1,3 +1,4 @@
+
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Logo from './components/Logo';
@@ -8,11 +9,12 @@ import Menu from './components/Menu';
 function App() {
   return (
     <div className="logo">
-      <Logo />
-      <Header />
-      <Footer title={"TNI"} website="www.google.com" address="Bangkok" postcode={10220} isOpen></Footer>
-      <Sidebar />
-      <Menu />
+    <Logo/>
+    <Header/>
+    <Footer title="TNI" website="www.google.com" 
+    address="Bangkok" postcode={10510} isOpen/>
+    <Sidebar/>
+    <Menu></Menu>
     </div>
   );
 }
