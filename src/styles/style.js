@@ -1,12 +1,9 @@
 const logo = {
-    borderColor : 'green',
-    borderWidth:2,
-    borderStyle:'solid'
+    borderColor: 'green',
+    borderWidth: 2 ,
+    borderStyle: 'solid'
 }
-
 const title = {
-    color : 'pink'
-
+    color: 'pink'
 }
-
-export { logo,title }
+export{logo,title}
