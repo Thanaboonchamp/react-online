@@ -1,13 +1,15 @@
-import React from "react";
+import React from 'react'
 
-const Footer = () => {
-    const Name = "Pakawat Noosaard"
-  return (
-    <>
-      <footer className="container">
-        <p>© {Name} 1998-{new Date().getFullYear()}</p>
-      </footer>
-    </>
-  );
-};
-export default Footer;
+
+
+const Footer = ( ) => {
+const Name = "Passawee Wanwilai "
+    return (
+        <>
+                 <footer className="container">
+          <p>© {Name} 2000-{new Date().getFullYear()}</p>
+        </footer>
+        </>
+    )
+}
+export default Footer

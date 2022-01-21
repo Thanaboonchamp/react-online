@@ -13,8 +13,8 @@ const ContactUsPage = () => {
               </Modal.Header>
 
               <Modal.Body>
-                <h5 className="mt-3">Pakawat Noosaard</h5>
-                Hello everyone , You can call me 'Nut' for short, nice to meet you all!
+                <h5 className="mt-3">Thanaboon Luekajornsak</h5>
+                Hello everyone , You can call me 'champ' for short, nice to meet you all!
                 <div className="col-md-12 mt-3 ml-3">
                   <p>  📖 Right now I'm studying in Faculty of information technology , mutimedia technology branch.</p>
                   <p>  👾 I'm interest in coding especially in game industry (e.g Game devoloper, Game Designer)</p>
@@ -22,8 +22,8 @@ const ContactUsPage = () => {
                   <p>  🔍 I'm looking forward to have worked and gained experience in Game industry. </p>
                 </div>
                     <p>Feel free to visit my github below</p>
-                <Button className='mt-1' href="https://github.com/PakawatNoosaard" variant="outline-secondary"><BsGithub size={30} color="gray"className='mr-2' /> GitHub </Button>
-                <p className='mt-2' > <b>Contact me :</b> no.pakawat_st@tni.ac.th</p>
+                <Button className='mt-1' href="https://github.com/Thanaboonchamp" variant="outline-secondary"><BsGithub size={30} color="gray"className='mr-2' /> GitHub </Button>
+                <p className='mt-2' > <b>Contact me :</b> lu.thanaboon_st@tni.ac.th</p>
               </Modal.Body>
             </Modal.Dialog>
           </div>

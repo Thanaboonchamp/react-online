@@ -8,24 +8,24 @@ const Contactus = () => {
                 <Card>
                     <Card.Header >Contactus</Card.Header>
                     <Card.Body>
-                        <Card.Title>Pakawat Noosaard</Card.Title>
+                        <Card.Title>Passawee Wanwilai</Card.Title>
                         <Card.Text>
-                            You can call me "Nut" . Nice to meet you !
+                            Hello it's me "Tan" . Nice to meet you !
                             <ul className="mt-2">
                                 <li className="mt-2" >
-                                    I am studying at Thai-Nichi Institute of Technology. since I was a kid Technology multimedia has been my passion.
+                                    I am studying at Thai-Nichi Institute of Technology. 
                                 </li>
-                                <li className="mt-2" >I always take my time to practice and learning about Video Editing and Website Development.</li>
-                                <li className="mt-2" >I Love to Play Video Games and listen Music !</li>
+                                <li className="mt-2" >I like to play games</li>
+                                <li className="mt-2" >I Love to listen Music !</li>
                                 <li className="mt-2" >
-                                    I wish  in the future I can work with Big company !
+                                    I wish in the future I gonna be rich !
                                 </li>
                             </ul>
                         </Card.Text>
-                        <Button href='https://github.com/PakawatNoosaard' variant="outline-secondary"><BsGithub color="outline-info" size="2em" /> Click here</Button>
+                        <Button href='https://github.com/PassaweeTT' variant="outline-secondary"><BsGithub color="outline-info" size="2em" /> Click here</Button>
                         <br />
                         <br />
-                        <b>Contact Me</b> : no.pakawat_st@tni.ac.th
+                        <b>Contact Me</b> : wa.passawee_st@tni.ac.th
                     </Card.Body>
                 </Card>
             </div>

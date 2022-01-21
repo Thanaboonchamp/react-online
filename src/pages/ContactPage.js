@@ -11,7 +11,7 @@ function ContactPage() {
           <Card>
             <Card.Header>Contact Us</Card.Header>
             <Card.Body>
-              <Card.Title>Pakawat Noosaard</Card.Title>
+              <Card.Title>Thanaboon Luekajornsak</Card.Title>
               <Card.Text>
               Hello everyone , You can call me 'Nut' for short, nice to meet you all!
                 <ul className="mt-2">
@@ -27,14 +27,14 @@ function ContactPage() {
                 For my github visit link below.
               </Card.Text>
               <Button
-                href="https://github.com/PakawatNoosaard"
+                href="https://github.com/ThanaboonLuekajornsak"
                 variant="outline-secondary"
               >
                 <BsGithub size={30} color="gray" /> Click here
               </Button>
               <br />
               <br />
-              <b>Contact Me</b> : no.pakawat_st@tni.ac.th
+              <b>Contact Me</b> : lu.thanaboon_st@tni.ac.th
             </Card.Body>
           </Card>
         </div>
