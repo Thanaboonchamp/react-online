@@ -1,45 +1,35 @@
-import React from 'react'
+ import React from 'react'
 
-const Sidebar = () =>{
-    //let fullname = 'John'
+const Sidebar = () => {
 
+   // let fullname = 'John'
     const [fullname,setFullname] = React.useState('John')
-
     const [isShow,setIsShow] = React.useState(true)
-
-    const changName = () =>{
-        //fullname ="Marry"
-        setFullname("Marry")
-        setIsShow(false)
+    const changename = () => {
+       // fullname = 'Marry'
+       setFullname ('Marry')
+       setIsShow(false)
     }
+
     React.useEffect(() => {
+        console.log("sidebar use effect")
+    })
 
-        console.log("sidebar useEffect")
-        //ทำงานทุกครั้งที่มีการอัพเดตui และเรนเดอร์ component
-    }
-    )
     React.useEffect(() => {
-
-        console.log("sidebar useEffect one time only")
-        //ทำงานแค่ครั้งแรกพอ
-    },[]
-    )
+        console.log("sidebar use effect onetime only")
+    },[])
     React.useEffect(() => {
-
-        console.log("sidebar useEffect fullname")
-        //ทำงานครั้งแรกที่เรนเดอร์fullname ทำงานอีกตอนfullnameเปลี่ยนแปลง
-    },[fullname]
-    )
-
+        console.log("sidebar use effect fullname")
+    },[fullname])
     return (
-        <>
-            <p>สวัสดี  {fullname}</p> 
+        <div>
+            <p>สวัสดี {fullname}</p>
             {
-                isShow ? <p>Hello</p> : <p>World</p>
+                isShow ? <p>Hello</p> :<p>World</p>
             }
-            <button onClick={changName}>Change name</button>
-        </>
-
+            <button onClick={changename}>Change name</button>
+        </div>
     )
 }
+
 export default Sidebar

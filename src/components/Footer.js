@@ -3,7 +3,7 @@ import React from 'react'
 
 
 const Footer = ( ) => {
-const Name = "Thanaboon Luekajornsak"
+const Name = "Passawee Wanwilai "
     return (
         <>
                  <footer className="container">
