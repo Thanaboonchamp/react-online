@@ -25,36 +25,73 @@ import MemberPage from "./pages/MemberPage";
 import PrivateRoute from "./guard/auth";
 import UserStoreProvider from './context/UserContext';
 
+// redux setup
+import { Provider } from 'react-redux'
+import { createStore } from 'redux'
+import rootReducer from "./redux/reducers/index";
+const store = createStore(rootReducer)
+
 function App() {
   return (
-    <UserStoreProvider>
-    <ToastProvider placement='top-center'>
-      <Router>
-          <NavBar/>
+    <Provider store={store}>
+      <UserStoreProvider>
+      <ToastProvider>
+        <Router>
+          <NavBar />
           <Switch>
-            <Route exact path='/'><HomePage/></Route>
-            <Route path='/product'><ProductPage/></Route>
-            <Route path='/about'><AboutPage/></Route>
-            <Route path='/detail/:id/title/:title'><DetailPage/></Route>
-            <Route path='/contact'><ContactPage/></Route>
-            <Route path='/hospital'><HospitalPage/></Route>
-            <Route path='/upload'><UploadPage></UploadPage></Route>
-            <Route path='/register'><RegisterPage/></Route>
-            <Route path='/login'><LoginPage/></Route>
-            <PrivateRoute path='/member'><MemberPage/></PrivateRoute>
-            {/*<Route path='/category'><indexPage/></Route>*/}
-            <Route path='/category' render={ ({match : {url}}) => (
-              <>
-              <Route path={`${url}/`} exact><IndexPage></IndexPage></Route>
-              <Route path={`${url}/create`}><CreatePage></CreatePage></Route>
-              <Route path={`${url}/edit/:id`}><EditPage></EditPage></Route>
-              </>
-            )}></Route>
+          <Route exact path="/">
+              <HomePage />
+            </Route>
+            <Route path="/about">
+              <AboutPage />
+            </Route>
+            <Route path="/contact_us">
+              <contactUs />
+            </Route>
+            <Route path="/product">
+              <ProductPage />
+            </Route>
+            <Route path="/detail/:id/title/:title">
+              <DetailPage />
+            </Route>
+            <Route path="/hospital">
+              <HospitalPage />
+            </Route>
+            <Route path="/login">
+              <LoginPage />
+            </Route>
+            <Route path="/register">
+              <RegisterPage />
+            </Route>
+            <Route path="/upload">
+              <UploadPage />
+            </Route>
+            <PrivateRoute path="/member">
+              <MemberPage />
+            </PrivateRoute>
+            {/* makesense */}
+            <Route
+              path="/category"
+              render={({ match: { url } }) => (
+                <>
+                  <Route path={`${url}/`} exact>
+                    <IndexPage />
+                  </Route>
+                  <Route path={`${url}/create`}>
+                    <CreatePage />
+                  </Route>
+                  <Route path={`${url}/edit/:id`}>
+                    <EditPage />
+                  </Route>
+                </>
+              )}
+            ></Route>
         </Switch>
-        <Footer/>
-    </Router>
-    </ToastProvider>
+        <Footer />
+        </Router>
+      </ToastProvider>
     </UserStoreProvider>
+    </Provider>
   );
 }
 

@@ -23,8 +23,7 @@ const HomePage = () => {
           {/* Main jumbotron for a primary marketing message or call to action */}
           <div className="jumbotron">
             <div className="container">
-            <h1 className="display-3">Hello, world! 
-              {
+            <h1 className="display-3">Hello, world! {
             userStore.profile ? (
               <span className="nav-text">{userStore.profile.name}</span>
             ) : (
