@@ -20,6 +20,18 @@ const NavBar = () => {
    // React.useEffect(()=>{
   //   getProfile()
   // },[])
+  const getProfile = () =>{
+    //localStorage.getItem('profile')
+    const profileValue = JSON.parse(localStorage.getItem('profile'))
+    if(profileValue){
+      // setProfile(profileValue)
+      userStore.updateProfile(profileValue)
+    }
+}
+
+React.useEffect(()=>{
+  getProfile()
+},[])
 
   const logout = () =>{
     localStorage.removeItem('token')
@@ -32,7 +44,7 @@ const NavBar = () => {
     <div>
       <Navbar bg="light" expand="lg">
        {/* <Navbar.Brand Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand> */}
-        <NavLink className="navbar-brand" to="/" exact >React-Bootstrap</NavLink>
+       <NavLink className="navbar-brand" to="/" exact >React-Bootstrap</NavLink>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
@@ -61,10 +73,9 @@ const NavBar = () => {
           </Form>*/}
 {
             userStore.profile ? (
-              <span className="nav-text">Welcome {userStore.profile.name} 
-              <button onClick={logout} className="btn btn-danger ml-2">
-                Logout</button>
-                </span>
+              <span className="nav-text">Welcome {userStore.profile.name}
+              <button className="btn btn-danger ml-2" onClick={logout}>Logout</button>
+              </span>
             ) : (
               <>
                 <Nav>

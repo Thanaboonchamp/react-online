@@ -1,14 +1,37 @@
 import React from 'react'
-import {FaGithubAlt} from 'react-icons/fa'
-const Homepage = () => {
+import {FaCat} from 'react-icons/fa'
+import { UserStoreContext } from "../context/UserContext";
+
+const HomePage = () => {
+
+  const userStore = React.useContext(UserStoreContext)
+
+  const getProfile = () =>{
+      const profileValue = JSON.parse(localStorage.getItem('profile'))
+      if(profileValue){
+        userStore.updateProfile(profileValue)
+      }
+  }
+
+  React.useEffect(()=>{
+    getProfile()
+  },[])
+
     return (
-      
-              <div>
-        <main role="main">
+        <div>
+            <main role="main">
           {/* Main jumbotron for a primary marketing message or call to action */}
           <div className="jumbotron">
             <div className="container">
-              <h1 className="display-3">Hello, world!      <FaGithubAlt color="skyblue" size="2em"/></h1>
+            <h1 className="display-3">Hello, world! 
+              {
+            userStore.profile ? (
+              <span className="nav-text">{userStore.profile.name}</span>
+            ) : (
+              <>
+              </>
+            )
+          } <FaGithubAlt color='pink'/></h1>
               <p>
                 This is a template for a simple marketing or informational
                 website. It includes a large callout called a jumbotron and
@@ -76,10 +99,8 @@ const Homepage = () => {
           </div>{" "}
           {/* /container */}
         </main>
- 
-      </div>
-      
+        </div>
     )
 }
 
-export default Homepage
+export default HomePage
