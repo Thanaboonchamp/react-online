@@ -8,7 +8,7 @@ const Footer = ({title,website,address,postcode,isOpen} ) => {
         <div>
             <h1 style={styles.title}> {title} &copy; {new Date().getFullYear()}</h1>
             <p style={{color:'green',fontSize:18}}>{website} {address} {postcode} {isOpen.toString()} </p>
-            <p  style={styles.title}>Nonpawit Nittaworn</p>
+            <p  style={styles.title}>Thanaboon Luekajornsak</p>
         </div>
     )
 }
@@ -19,12 +19,6 @@ title :{
 }
 
 }
-
-
-
-
-
-
 
 
 Footer.propTypes = {

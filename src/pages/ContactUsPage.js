@@ -13,8 +13,8 @@ const ContactUsPage = () => {
               </Modal.Header>
 
               <Modal.Body>
-                <h5 className="mt-3">Pakawat Noosaard</h5>
-                Hello everyone , You can call me 'Nut' for short, nice to meet you all!
+                <h5 className="mt-3">Thanaboon Luekajornsak</h5>
+                Hello everyone , You can call me 'Champ' for short, nice to meet you all!
                 <div className="col-md-12 mt-3 ml-3">
                   <p>  📖 Right now I'm studying in Faculty of information technology , mutimedia technology branch.</p>
                   <p>  👾 I'm interest in coding especially in game industry (e.g Game devoloper, Game Designer)</p>
