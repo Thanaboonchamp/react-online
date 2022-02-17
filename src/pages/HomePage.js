@@ -30,7 +30,7 @@ const HomePage = () => {
               <>
               </>
             )
-          } <FaGithubAlt color='pink'/></h1>
+          } <FaCat color='pink'/></h1>
               <p>
                 This is a template for a simple marketing or informational
                 website. It includes a large callout called a jumbotron and
